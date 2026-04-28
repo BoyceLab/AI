@@ -1,0 +1,68 @@
+site_name: Understanding AI in Medical Research
+site_description: A practical guide for patient advocates who fund and evaluate AI-driven science
+site_url: https://boycelab.github.io/AI/
+repo_url: https://github.com/BoyceLab/AI
+repo_name: BoyceLab/AI
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Source Serif 4
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tooltips
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Course:
+    - "Module 1: What is AI?": modules/module1.md
+    - "Module 2: How ML Works": modules/module2.md
+    - "Module 3: AI in Research": modules/module3.md
+    - "Module 4: Data & Bias": modules/module4.md
+    - "Module 5: Evaluating Claims": modules/module5.md
+  - Funder Reference Card: reference.md
+  - About: about.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/BoyceLab/AI

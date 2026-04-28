@@ -1,0 +1,79 @@
+/* Hero section on home page */
+.hero-section {
+  margin: 2rem 0 3rem;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Course card grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.course-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem 1.5rem;
+  background: var(--md-default-bg-color);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  border-color: var(--md-primary-fg-color);
+}
+
+.card-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 0.5rem;
+}
+
+.course-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem;
+  color: var(--md-default-fg-color);
+}
+
+.course-card p {
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.card-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
